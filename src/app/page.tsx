@@ -1,9 +1,9 @@
-import Image from "next/image";
-
+import Players from "./components/Players";
 export default function Home() {
   return (
-    <div>
-      <div></div>
+    <div className="bg-[#F7F7F8]">
+      <Players />
     </div>
   );
 }
+
