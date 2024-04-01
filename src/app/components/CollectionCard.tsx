@@ -14,14 +14,14 @@ interface Props {
 
 export default function CollectionCard({ collection }: Collection) {
   return (
-    <div className="flex flex-col lg:flex-row gap-10">
+    <div className="flex flex-col lg:flex-row gap-10 ">
       {collection.map(({ id, name, date, day, time, img, place, action }) => {
         return (
           <div
             key={id}
             className="bg-[url('/Bg.png')] dark:bg-[url('/Bg2.png')] bg-center object-cover shadow-[0px 8px_16px_0px_#0000001A] bg-no-repeat flex flex-col items-center h-[625px] w-[257px]"
           >
-            <img src={img} />
+            <img src={img} alt="players collection"/>
             <div className="flex flex-col items-center px-[22px] my-5">
               <h3 className="font-medium text-[17px] leading-[26px]">{name}</h3>
               <div className="font-normal text-sm mt-2">

@@ -40,5 +40,4 @@ export default function Collection({ collection }: Collection) {
     </div>
   );
 }
-// background: linear-gradient(180deg, #18282A 0%, #221A2C 100%);
 

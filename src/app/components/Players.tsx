@@ -1,6 +1,25 @@
 import PlayersCard from "./PlayersCard";
 import Advertisement from "./Advertisement";
-export default function Players({ playersData, advertisement }) {
+
+interface Players {
+  playersData: Props[];
+  advertisement: Props2[];
+}
+
+interface Props {
+  id: string;
+  name: string;
+  totalEvents: string;
+  sport: string;
+  img: string;
+}
+interface Props2 {
+  id: string;
+  title: string;
+  description: string;
+  addImg: string;
+}
+export default function Players({ playersData, advertisement }: Players) {
   return (
     <div className="pt-11 ">
       <h2 className="py-1.5 border-b-2 border-[#738FFF] w-fit text-2xl font-bold my-0 mx-auto lg:mx-0 dark:text-white">

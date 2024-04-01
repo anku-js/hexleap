@@ -1,4 +1,14 @@
-export default function PlayersCard({ playersData }) {
+interface Players {
+  playersData: Props[];
+}
+interface Props {
+  id: string;
+  name: string;
+  totalEvents: string;
+  sport: string;
+  img: string;
+}
+export default function PlayersCard({ playersData }: Players) {
   return (
     <div className="mt-6 flex gap-3 flex-col lg:flex lg:flex-row md:grid md:rows-auto md:grid-cols-2">
       {playersData.map(({ id, name, totalEvents, sport, img }) => {
