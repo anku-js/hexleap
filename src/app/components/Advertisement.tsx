@@ -1,14 +1,21 @@
 export default function Advertisement({ advertisement }) {
   return (
-    <div className="bg-white shadow-[0px_4px_8px_0px_#0000000D] mt-0 max-w-[240px] my-0 mx-auto lg:mx-0 lg:mt-6">
-      <div className="px-2.5 py-2.5">
-        <img src={advertisement[0].addImg} alt="advertisement"/>
-        <div>
-          <h3 className="mt-7 text-xl font-semibold	text-[#222D3A]">{advertisement[0].title}</h3>
-          <p className="text-sm font-normal text-[#525965] mt-2 leading-6">{advertisement[0].description}</p>
+    <div className="bg-white dark:bg-[#3B3E47] shadow-[0px_4px_8px_0px_#0000000D] max-w-[250px] mt-0 lg:max-w-[200px] my-0 mx-auto md:mt-6 xl:max-w-[250px]">
+      <div className="mx-2.5 my-2.5 border-[0.2px] border-[#006555]">
+        <img
+          src={advertisement[0].addImg}
+          alt="advertisement"
+          className="w-full"
+        />
+        <div className="px-2.5 ">
+          <h3 className="mt-6 text-xl font-semibold	text-[#222D3A] dark:text-white">
+            {advertisement[0].title}
+          </h3>
+          <p className="text-sm font-normal text-[#525965] dark:text-[#DFDFDF] my-2 leading-[1.4rem]">
+            {advertisement[0].description}
+          </p>
         </div>
       </div>
     </div>
   );
 }
-

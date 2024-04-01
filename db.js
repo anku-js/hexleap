@@ -79,3 +79,36 @@ export const advertisement = [
     addImg: "/addImg1.jpg",
   },
 ];
+
+export const collection = [
+  {
+    id: "1",
+    name: "Las Vegas Aviators",
+    date: "OCT 15",
+    day: "SUN",
+    time: "4:30 PM",
+    img: "/Collection1.png",
+    place: "Las Vegas Ballpark, Las Vegas, Nevada",
+    action: "Take Flight Collection"
+  },
+  {
+    id: "2",
+    name: "Sacramento River Cats",
+    date: "OCT 15",
+    day: "SUN",
+    time: "4:30 PM",
+    img: "/Collection2.png",
+    place: "Sutter Health Park, Sacramento, California",
+    action: "Orange Collection"
+  },
+  {
+    id: "3",
+    name: "Las Vegas Aviators",
+    date: "OCT 15",
+    day: "SUN",
+    time: "4:30 PM",
+    img: "/Collection1.png",
+    place: "Las Vegas Ballpark, Las Vegas, Nevada",
+    action: "Take Flight Collection"
+  },
+];

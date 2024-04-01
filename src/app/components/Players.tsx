@@ -2,11 +2,11 @@ import PlayersCard from "./PlayersCard";
 import Advertisement from "./Advertisement";
 export default function Players({ playersData, advertisement }) {
   return (
-    <div className="max-w-[1250px] mx-auto pt-11">
-      <h2 className="py-1.5 border-b-2 border-[#738FFF] w-fit text-2xl font-bold my-0 mx-auto lg:mx-0">
+    <div className="pt-11 ">
+      <h2 className="py-1.5 border-b-2 border-[#738FFF] w-fit text-2xl font-bold my-0 mx-auto lg:mx-0 dark:text-white">
         Sports
       </h2>
-      <div className="flex gap-3 flex-col lg:flex-row">
+      <div className="flex gap-3 flex-col md:flex-row">
         <PlayersCard playersData={playersData} />
         <Advertisement advertisement={advertisement} />
       </div>
