@@ -11,7 +11,6 @@ export default function Home() {
   const [playersData, setPlayersData] = useState(players);
   const [isDarkmode, setIsDarkMode] = useState(false);
 
-
   useEffect(() => {
     if (isDarkmode === true) {
       document.documentElement.classList.add("dark");
@@ -24,7 +23,6 @@ export default function Home() {
     setIsDarkMode((prev) => !prev);
   }
 
-  console.log(isDarkmode);
   return (
     <div className="max-w-[1250px] mx-auto ">
       <div className="mt-10 flex gap-5 justify-center">
@@ -41,10 +39,7 @@ export default function Home() {
           <span className="ball"></span>
         </label>
       </div>
-      <Players
-        playersData={playersData}
-        advertisement={advertisement}
-      />
+      <Players playersData={playersData} advertisement={advertisement} />
       <Collection collection={collection} />
     </div>
   );

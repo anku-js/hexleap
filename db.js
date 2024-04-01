@@ -110,5 +110,5 @@ export const collection = [
     img: "/Collection1.png",
     place: "Las Vegas Ballpark, Las Vegas, Nevada",
     action: "Take Flight Collection"
-  },
+  }
 ];

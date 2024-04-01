@@ -10,7 +10,7 @@ interface Props {
 }
 export default function PlayersCard({ playersData }: Players) {
   return (
-    <div className="mt-6 flex gap-3 flex-col lg:flex lg:flex-row md:grid md:rows-auto md:grid-cols-2">
+    <div className="mt-6 flex gap-3 flex-col lg:flex lg:flex-row sm:grid sm:rows-auto sm:grid-cols-2 md:grid-cols-3">
       {playersData.map(({ id, name, totalEvents, sport, img }) => {
         return (
           <div
